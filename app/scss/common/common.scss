@@ -27,6 +27,18 @@ ul {
     list-style: none;
 }
 
+.header-text-color-black {
+    color: $clients__h3;
+}
+
+.header-text-color-grey {
+    color: $experience_tabs;
+}
+
+.header-text-color-blue {
+    color: $blue;
+}
+
 .pt-custom {
     padding-top: 140px;
 }

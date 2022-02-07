@@ -1,0 +1,24 @@
+.introduction {
+    padding: 200px 0 100px 0;
+    h2 {
+        font-size: $font-size-tabs;
+    }
+    .row {
+        max-width: 80%;
+        @extend %margin;
+        gap: 40px
+    }
+    &__info {
+        max-width: 55%;
+        font-size: $font-size_xl;
+    }
+    &__advantages {
+        margin: 0;
+        border-left: 4px solid $experience_tabs_border;
+        font-size: $font-size_lg;
+        color: $clients__h3;
+    }
+    &__number {
+        font-size: $font-size-introduction-number;
+    }
+}

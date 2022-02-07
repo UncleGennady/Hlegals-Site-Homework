@@ -41,3 +41,15 @@
 %border-bg-wrapper {
     border-radius: 0 0 12px 12px;
 }
+
+%border-top-for-footer {
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        box-shadow: 0 4px 0 0 $experience_tabs_border;
+        height: 4px;
+        z-index: 1;
+    }
+}

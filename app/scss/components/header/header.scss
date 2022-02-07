@@ -53,6 +53,9 @@
         &-toggler-icon {
             background-image: url("./../img/icons/Hamburger.svg");
         }
+        &-toggler-icon-black {
+            background-image: url("./../img/icons/Hamburger-black.svg");
+        }
     }
     .navbar-nav {
         gap: 16px;
@@ -61,7 +64,8 @@
     &__link {
         font-size: $font-size_lg;
         transition: .3s;
-        &:hover {
+        &:hover,
+        &:active {
             color: $experience_tabs_border_active;
         }
     }
@@ -71,7 +75,7 @@
         transition: .3s;
     }
     &__page-name {
-        font-size: $font-size-h2;
+        font-size: $font-size-h1;
     }
     &__slash {
         padding-bottom: 12px;

@@ -1,0 +1,42 @@
+@include desktop {
+    .achievements {
+        &__item {
+            width: 220px;
+            height: 100px;
+        }
+    }
+}
+
+@include laptop {
+    .achievements {
+        &__item {
+            width: 180px;
+            height: 85px;
+        }
+    }
+}
+
+@include tablet {
+    .achievements {
+        .big-slide {
+            display: none;
+        }
+        .small-slide {
+            display: block;
+        }
+        &__item {
+            width: 300px;
+            height: 110px;
+        }
+    }
+}
+
+@include tablet {
+    .achievements {
+        &__item {
+            padding: 10px 0;
+            width: 155px;
+            height: 55px;
+        }
+    }
+}

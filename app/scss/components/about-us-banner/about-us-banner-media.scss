@@ -1,0 +1,37 @@
+@include laptop {
+    .about-us-banner {
+        h1 {
+            font-size: $font-size-about-us-h1-laptop;
+            letter-spacing: 45px;
+        }
+    }
+}
+
+@include tablet {
+    .about-us-banner {
+        margin-bottom: 20px;
+        h1 {
+            font-size: $font-size-about-us-h1-tablet;
+            letter-spacing: 35px;
+        }
+    }
+}
+
+@include mobile {
+    .about-us-banner {
+        h1 {
+            padding: 160px 0;
+            font-size: $font-size-introduction-number;
+            letter-spacing: 20px;
+        }
+    }
+}
+
+@include mobile_s {
+    .about-us-banner {
+        h1 {
+            font-size: $font-size-h2;
+            letter-spacing: 15px;
+        }
+    }
+}

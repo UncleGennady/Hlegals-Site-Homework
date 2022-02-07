@@ -15114,6 +15114,17 @@ progress {
   border-radius: 0 0 12px 12px;
 }
 
+.publications .row::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-shadow: 0 4px 0 0 #E6E6F0;
+          box-shadow: 0 4px 0 0 #E6E6F0;
+  height: 4px;
+  z-index: 1;
+}
+
 body {
   font-family: "TT Norms", sans-serif;
 }
@@ -15139,6 +15150,18 @@ a {
 
 ul {
   list-style: none;
+}
+
+.header-text-color-black {
+  color: #323264;
+}
+
+.header-text-color-grey {
+  color: #B3B3BA;
+}
+
+.header-text-color-blue {
+  color: #24A3FF;
 }
 
 .pt-custom {
@@ -15743,6 +15766,9 @@ ul {
 .header .navbar-toggler-icon {
   background-image: url("./../img/icons/Hamburger.svg");
 }
+.header .navbar-toggler-icon-black {
+  background-image: url("./../img/icons/Hamburger-black.svg");
+}
 .header .navbar-nav {
   gap: 16px;
   -webkit-box-pack: end;
@@ -15755,7 +15781,7 @@ ul {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.header__link:hover {
+.header__link:hover, .header__link:active {
   color: #F0145A;
 }
 .header .current-page {
@@ -15767,7 +15793,7 @@ ul {
   transition: 0.3s;
 }
 .header__page-name {
-  font-size: 32px;
+  font-size: 38px;
 }
 .header__slash {
   padding-bottom: 12px;
@@ -15782,6 +15808,9 @@ ul {
     background-color: rgba(255, 255, 255, 0.774);
     padding: 0 10px;
     border-radius: 4px;
+  }
+  .header .black-bg {
+    background-color: #323264;
   }
 }
 @media (max-width: 1024px) {
@@ -16097,16 +16126,6 @@ ul {
   width: 100%;
   -webkit-box-shadow: 0px -13px 96px 108px #F5F5FA;
           box-shadow: 0px -13px 96px 108px #F5F5FA;
-}
-.publications .row::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  -webkit-box-shadow: 0 4px 0 0 #E6E6F0;
-          box-shadow: 0 4px 0 0 #E6E6F0;
-  height: 4px;
-  z-index: 1;
 }
 .publications h4, .publications .h4 {
   color: #24A3FF;

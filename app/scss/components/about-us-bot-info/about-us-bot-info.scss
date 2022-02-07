@@ -1,0 +1,14 @@
+.about-us-bot-info {
+    padding-bottom: 90px;
+    .row {
+        max-width: 80%;
+        @extend %margin;
+    }
+    h2 {
+        font-size: $font-size-tabs;
+    }
+    &__text {
+        max-width: 55%;
+        font-size: $font-size_xl;
+    }
+}
