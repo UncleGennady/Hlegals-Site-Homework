@@ -1,0 +1,92 @@
+@media(max-width: $burger-media-width) {
+    .header {
+        .navbar {
+            .burger {
+                display: inline-block;
+            }
+        }
+        &__link {
+            color: $blue;
+            background-color: $header__link-bg;
+            padding: 0 10px;
+            border-radius: 4px;
+        }
+    }
+}
+
+@include laptop {
+    .header {
+        &__logo-services {
+            width: 300px;
+        }
+    }
+}
+
+@include tablet {
+    .header {
+        &__logo-services {
+            width: 290px;
+            margin-bottom: 30px;
+            height: 27px;
+        }
+        &__page-name {
+            font-size: $font-size-active-page-logo-tablet;
+        }
+        &__slash {
+            padding-bottom: 0;
+        }
+        .burger {
+            margin-top: 40px;
+        }
+    }
+}
+
+@include mobile {
+    .header {
+        &__top {
+            padding-top: 0;
+        }
+        &__top-wrapper {
+            margin: 0;
+            justify-content: space-between;
+            &>div:not(:last-child) {
+                padding-right: 0;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        &__address {
+            display: none;
+        }
+        .facebook {
+            display: none;
+        }
+        .navbar {
+            .container {
+                padding: 0 0 0 12px;
+            }
+            .burger {
+                margin-bottom: 5px;
+            }
+        }
+        .navbar-nav {
+            gap: 10px;
+        }
+        &__logo {
+            width: 78px;
+            height: 31px;
+        }
+        &__logo-services {
+            width: 270px;
+            margin-bottom: 0;
+        }
+        &__langs,
+        .tell a {
+            color: $experience_tabs;
+        }
+        .burger {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.services {
+    color: $white;
+    h2 {
+        font-size: $font-size-tabs;
+        padding-bottom: 65px;
+    }
+    h3 {
+        padding-bottom: 15px;
+        color: $blue;
+    }
+    h4 {
+        font-size: $font-size_sm;
+        opacity: .5;
+    }
+    &__item {
+        width: 30%;
+    }
+    &__page-item {
+        @extend %t-a-center;
+        width: 66%;
+        padding-top: 170px;
+        z-index: 2;
+        @extend %margin;
+        h1 {
+            font-size: $font-size-tabs;
+            padding-bottom: 20px;
+        }
+    }
+    &__page-text {
+        font-size: $font-size_xl;
+        padding-bottom: 40px;
+    }
+    &__icon {
+        padding-bottom: 20px;
+    }
+    &__page-link {
+        @extend %margin;
+        @include link (250px, 50px, $font-size_sm);
+    }
+    &__bot {
+        padding-top: 200px;
+        .row {
+            box-shadow: 0 -4px 0 0 $experience_tabs;
+            max-width: 85%;
+            @extend %margin;
+        }
+        h2 {
+            padding: 20px 0;
+            font-size: $font-size-h3-cases;
+        }
+    }
+    &__more-informations {
+        p {
+            padding: 0 0 20px 25px;
+            width: 45%;
+            &::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #f0145a;
+                position: absolute;
+                top: 11px;
+                left: 10px;
+            }
+        }
+    }
+    .shadow-transition {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+            box-shadow: 0 0 35px 75px#323264;
+        }
+    }
+}

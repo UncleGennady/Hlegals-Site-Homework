@@ -1,0 +1,28 @@
+@include laptop {
+    .team {
+        padding-bottom: 17px;
+    }
+}
+
+@include tablet {
+    .team {
+        padding-bottom: 0;
+    }
+}
+
+@include mobile {
+    .team {
+        &__info {
+            padding: 40px 20px 0 20px;
+        }
+        &__name {
+            padding-bottom: 20px;
+        }
+        &__avatar {
+            display: none;
+        }
+        &__avatar-small-wrapper {
+            display: block;
+        }
+    }
+}

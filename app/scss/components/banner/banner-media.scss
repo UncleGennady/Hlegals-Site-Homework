@@ -1,0 +1,40 @@
+@include tablet {
+    .banner {
+        h1 {
+            max-width: 80%;
+        }
+        &__first-bg {
+            height: 590px;
+        }
+    }
+}
+
+@include mobile {
+    .banner {
+        h1 {
+            max-width: 100%;
+        }
+        margin-top: -780px;
+        &__first-bg {
+            background: none;
+        }
+        &__second-bg {
+            background-size: cover;
+        }
+    }
+}
+
+@include mobile_s {
+    .banner {
+        h1 {
+            max-width: 100%;
+        }
+        &__first-bg {
+            height: 490px;
+            background: none;
+        }
+        &__second-bg {
+            background-size: contain;
+        }
+    }
+}

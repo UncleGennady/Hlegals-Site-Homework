@@ -1,0 +1,64 @@
+.cases {
+    border-radius: 11px;
+    padding-bottom: 30px;
+    &__items {
+        gap: 2px;
+    }
+    &__wrapper {
+        background-color: $team-slider-bg;
+    }
+    &__item-first {
+        padding: 0 20px;
+        width: 423px;
+        h3 {
+            padding: 48px 20px 20px 20px;
+        }
+        p {
+            padding: 0 20px 0 20px;
+        }
+    }
+    &__item {
+        background-color: $team-slider-bg;
+    }
+    &__item1 {
+        width: 423px;
+        padding: 105px 20px 0 20px;
+        h3 {
+            padding: 0 0 20px 0;
+        }
+    }
+    &__item1-1 {
+        width: 444px;
+    }
+    &__item2 {
+        width: 310px;
+        padding: 20px 20px 0 20px;
+        h3 {
+            padding: 0 0 20px 0;
+        }
+    }
+    &__item3 {
+        width: 444px;
+        padding: 76px 20px 0 20px;
+        h3 {
+            padding: 0 0 20px 0;
+        }
+    }
+    &__item3-1 {
+        width: 537px;
+    }
+    h4 {
+        padding: 20px 0 20px 20px;
+        font-size: $font-size_sm;
+        margin-bottom: 2px;
+    }
+    h3 {
+        color: $cases-h3;
+        font-size: $font-size-h3-cases;
+    }
+    p {
+        font-size: $font-size_lg;
+        color: $experience_tabs;
+        padding-bottom: 20px;
+    }
+}

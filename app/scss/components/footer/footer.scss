@@ -1,0 +1,52 @@
+.footer {
+    padding: 30px 0 50px 0;
+    background-color: $team-slider-bg;
+    &__info {
+        justify-content: space-between;
+    }
+    &__left {
+        max-width: 37%;
+    }
+    &__right {
+        max-width: 33%;
+    }
+    .dot {
+        &:before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            display: block;
+            background-color: $experience_tabs;
+            border-radius: 50%;
+            position: absolute;
+            top: 10px;
+            left: -15px;
+        }
+    }
+    &__item1 {
+        color: $footer-color1;
+        padding-right: 47px;
+    }
+    &__item2 {
+        a {
+            color: $blue;
+        }
+    }
+    &__item3 {
+        padding-right: 17px;
+    }
+    &__item4 {
+        padding-right: 26px;
+        a {
+            color: $footer-color2;
+        }
+    }
+    &__item5 {
+        a {
+            color: $blue;
+        }
+    }
+    &__item6 {
+        color: $experience_tabs;
+    }
+}

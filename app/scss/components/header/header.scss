@@ -1,0 +1,79 @@
+.header {
+    padding: 50px 0 0 0;
+    background: transparent;
+    z-index: 3;
+    &__top {
+        padding-top: 54px;
+        top: 0;
+        font-size: $font-size_md;
+        z-index: 1;
+    }
+    &__top-wrapper {
+        justify-content: end;
+        &>div:not(:last-child) {
+            position: relative;
+            padding-right: 20px;
+            &:after {
+                content: "";
+                width: 6px;
+                height: 6px;
+                display: block;
+                background-color: $white;
+                border-radius: 50%;
+                position: absolute;
+                top: 10px;
+                right: 7px;
+            }
+        }
+    }
+    &__langs {
+        color: $white;
+        span {
+            font-size: $font-size_xsm;
+            padding: 4px 6px;
+        }
+        label {
+            cursor: pointer;
+            input:checked+span {
+                background-color: $accent;
+                border-radius: 8px;
+            }
+        }
+    }
+    .navbar {
+        .burger {
+            display: none;
+            background-color: transparent;
+            transition: .3s;
+            border: none;
+            &:focus {
+                box-shadow: 0 0 1px 0 $white;
+            }
+        }
+        &-toggler-icon {
+            background-image: url("./../img/icons/Hamburger.svg");
+        }
+    }
+    .navbar-nav {
+        gap: 16px;
+        justify-content: flex-end;
+    }
+    &__link {
+        font-size: $font-size_lg;
+        transition: .3s;
+        &:hover {
+            color: $experience_tabs_border_active;
+        }
+    }
+    .current-page {
+        color: $experience_tabs_border_active;
+        box-shadow: 0 2px 0 0 $experience_tabs_border_active;
+        transition: .3s;
+    }
+    &__page-name {
+        font-size: $font-size-h2;
+    }
+    &__slash {
+        padding-bottom: 12px;
+    }
+}

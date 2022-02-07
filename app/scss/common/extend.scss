@@ -1,0 +1,43 @@
+// Here you should place your extend's
+// https://sass-scss.ru/documentation/rasshirenie_css/shablonnie_selektori/
+// https://sass-scss.ru/documentation/pravila_i_direktivi/direktiva_extend/
+%margin {
+    margin: 0 auto;
+}
+
+%marginauto {
+    margin: auto;
+}
+
+%d-flex {
+    display: flex;
+}
+
+%t-a-center {
+    text-align: center;
+}
+
+%d-i-block {
+    display: inline-block;
+}
+
+%list-s-none {
+    list-style: none;
+}
+
+%color-gradient {
+    background: -webkit-linear-gradient($experience_tabs_hover);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+%carousel-indicators {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $blue;
+}
+
+%border-bg-wrapper {
+    border-radius: 0 0 12px 12px;
+}

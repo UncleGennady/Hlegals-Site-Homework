@@ -1,0 +1,29 @@
+@include desktop {
+    .footer {
+        .dot {
+            &:before {
+                display: none;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .footer {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left {
+            max-width: 100%;
+            flex-direction: column;
+        }
+        &__item1 {
+            padding: 0;
+        }
+        &__right {
+            max-width: 75%;
+            text-align: center;
+        }
+    }
+}

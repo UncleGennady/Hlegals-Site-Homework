@@ -1,0 +1,11 @@
+@include tablet {
+    .experience {
+        padding-bottom: 30px;
+        &__tabs {
+            display: none;
+        }
+        .carousel {
+            display: block;
+        }
+    }
+}

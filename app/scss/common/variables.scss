@@ -1,0 +1,55 @@
+// Your variables should be placed here
+// https://sass-scss.ru/documentation/sassscript/peremennie/
+$font-size_xsm: 12px;
+$font-size_sm: 14px;
+$font-size_md: 16px;
+$font-size_lg: 18px;
+$font-size-active-page-logo-tablet: 19px;
+$font-size_xl: 21px;
+$font-size_xxl:22px;
+$font-size-h3-cases:24px;
+$font-size-h1: 38px;
+$font-size-h2:32px;
+$font-size-tabs:42px;
+//-------------------------------------
+$font-main:'TT Norms',
+sans-serif;
+//-------------------------------------
+$breakpoint_xxl:1320px;
+$breakpoint_xl:1024px;
+$breakpoint_lg:860px;
+$breakpoint_md:768px;
+$breakpoint_sm:425px;
+$breakpoint_xsm:375px;
+$burger-media-width:991px;
+//--------------------------------------
+$white:white;
+$black: black;
+$accent:#F0145A;
+$header-background: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$header__link-bg:rgba(255, 255, 255, 0.774);
+$experience_tabs: #B3B3BA;
+$experience_tabs_hover:#EF8080,
+#F0145A;
+$experience_tabs_border: #E6E6F0;
+$experience_tabs_border_active: #F0145A;
+$card-shadow__top:#CACADB;
+$card-shadow__bot:#E7E7F2;
+$team-slider-bg:#F5F5FA;
+$blue:#24A3FF;
+$cases-h3:#686887;
+$clients__h3:#323264;
+$clients__item1:#1C4280;
+$clients__item2:#143646;
+$clients__item3:#F48B30;
+$clients__item4:#9E4DC3;
+$clients__item5:#FD9339;
+$clients__item6:#E2E2E4;
+$clients__item7:#C71C36;
+$clients__item8:#DCF3F9;
+$clients__item9:#EAEAEA;
+$clients__item10:#282240;
+$clients__item11:#1D4568;
+$clients__item12:#000000;
+$footer-color1:#323264;
+$footer-color2:#46466E;

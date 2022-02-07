@@ -1,0 +1,56 @@
+.experience {
+    z-index: 5;
+    position: relative;
+    padding-bottom: 80px;
+    .nav-link {
+        padding: 10px 40px 10px 0;
+        font-size: $font-size-tabs;
+        line-height: 50px;
+        letter-spacing: 0em;
+        color: $experience_tabs;
+        transition: .3s;
+        border-radius: 0;
+        border-right: 4px solid $experience_tabs_border;
+        &:hover {
+            @extend %color-gradient;
+        }
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        @extend %color-gradient;
+        border-color: $experience_tabs_border_active;
+    }
+    &__tabs {
+        @extend %d-flex;
+    }
+    .tab-content {
+        max-width: 55%;
+        color: $white;
+        padding: 70px 0 0 40px;
+        h2 {
+            padding-bottom: 20px;
+        }
+        p {
+            font-size: $font-size_xl;
+        }
+    }
+    .carousel {
+        display: none;
+        padding-bottom: 40px;
+        color: $white;
+        p {
+            font-size: $font-size_lg;
+        }
+        h2 {
+            padding-bottom: 15px;
+            font-size: $font-size_xxl;
+        }
+    }
+    .carousel-indicators [data-bs-target] {
+        @extend %carousel-indicators;
+    }
+    .slide-title {
+        padding-bottom: 10px;
+        font-size: $font-size_sm;
+    }
+}

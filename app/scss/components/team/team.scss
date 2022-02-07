@@ -1,0 +1,44 @@
+.team {
+    padding-bottom: 17px;
+    color: $experience_tabs;
+    h4 {
+        color: $blue;
+        font-size: $font-size_sm;
+    }
+    .carousel {
+        padding-bottom: 60px;
+    }
+    .carousel-indicators [data-bs-target] {
+        @extend %carousel-indicators;
+    }
+    .carousel-inner {
+        border-radius: 11px;
+    }
+    &__bg {
+        background-color: $team-slider-bg;
+    }
+    &__info {
+        padding: 40px 0 0 40px;
+    }
+    &__avatar-small-wrapper {
+        display: none;
+        padding-right: 10px;
+    }
+    &__avatar-small {
+        background-size: cover;
+        padding: 0;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    &__avatar-small1 {
+        background-image: url("./../img/images/photo1.svg");
+    }
+    &__avatar-small2 {
+        background-image: url("./../img/images/Photo2.svg");
+    }
+    &__avatar-small3 {
+        background-image: url("./../img/images/Photo3.svg");
+    }
+}

@@ -1,0 +1,50 @@
+.clients {
+    h3 {
+        color: $clients__h3;
+        padding-bottom: 30px;
+        font-size: $font-size_sm;
+    }
+    &__item {
+        width: calc(100% / 3);
+        a {
+            width: 100%;
+            height: 120px;
+        }
+    }
+    .hillel {
+        background-color: $clients__item1;
+    }
+    .wannabiz {
+        background-color: $clients__item2;
+    }
+    .targerine {
+        background-color: $clients__item3;
+    }
+    .look {
+        background-color: $clients__item4;
+    }
+    .arangear {
+        background-color: $clients__item5;
+    }
+    .adteligent {
+        background-color: $clients__item6;
+    }
+    .clickky {
+        background-color: $clients__item7;
+    }
+    .eco {
+        background-color: $clients__item8;
+    }
+    .infra {
+        background-color: $clients__item9;
+    }
+    .city {
+        background-color: $clients__item10;
+    }
+    .art {
+        background-color: $clients__item11;
+    }
+    .logom {
+        background-color: $clients__item12;
+    }
+}
