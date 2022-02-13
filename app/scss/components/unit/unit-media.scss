@@ -1,0 +1,47 @@
+@include laptop {
+    .unit {
+        h1 {
+            padding-top: 0;
+        }
+        .row {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@include tablet {
+    .unit {
+        padding-top: 130px;
+        .row {
+            max-width: 100%;
+            justify-content: initial;
+        }
+        &__text {
+            p {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .unit {
+        &__avatar {
+            max-width: 335px;
+            img {
+                width: 100%;
+            }
+        }
+        ul {
+            li {
+                width: 100%;
+            }
+            &>li:not(:last-child) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

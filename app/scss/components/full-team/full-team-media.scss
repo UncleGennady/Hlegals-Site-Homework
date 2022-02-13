@@ -1,0 +1,33 @@
+@include laptop {
+    .full-team {
+        h1 {
+            max-width: 100%
+        }
+    }
+}
+
+@include tablet {
+    .full-team {
+        padding-top: 120px;
+        &__item {
+            @include flex-media-vertical (center);
+            gap: 20px;
+        }
+        &__info {
+            display: initial;
+        }
+    }
+}
+
+@include mobile {
+    .full-team {
+        h1 {
+            font-size: $font-size-h2;
+        }
+        &__item {
+            >img {
+                width: 160px;
+            }
+        }
+    }
+}

@@ -19,9 +19,23 @@
     }
 }
 
+@include laptop {
+    .publications-page {
+        margin-top: 200px;
+    }
+}
+
 @include tablet {
     .publications {
         padding: 20px 12px 0;
+    }
+    .publications-page {
+        &__row {
+            padding-bottom: 40px;
+        }
+        .switcher {
+            margin-bottom: 20px;
+        }
     }
 }
 
@@ -39,5 +53,8 @@
         &__info {
             width: 100%;
         }
+    }
+    .publications-page {
+        margin-top: 130px;
     }
 }

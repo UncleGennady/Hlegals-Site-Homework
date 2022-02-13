@@ -1,0 +1,41 @@
+.full-team {
+    padding-top: 200px;
+    h1 {
+        max-width: 80%;
+        font-size: $font-size-tabs;
+        padding-bottom: 80px;
+        @extend %margin;
+    }
+    h4 {
+        font-size: $font-size_lg;
+        color: $clients__h3;
+    }
+    &__item {
+        >img {
+            padding-bottom: 20px;
+        }
+    }
+    &__info {
+        @extend %d-flex;
+    }
+    &__name {
+        p {
+            font-size: $font-size_md;
+            color: $experience_tabs;
+        }
+    }
+    .arrow {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $team-slider-bg;
+        transition: .3s;
+        &:hover,
+        &:active {
+            background-color: $bluehover;
+        }
+        img {
+            @extend %margin;
+        }
+    }
+}

@@ -1,0 +1,37 @@
+.contact {
+    padding: 200px 0 80px 0;
+    .row {
+        max-width: 80%;
+        @extend %margin;
+    }
+    &__info {
+        width: 40%;
+        color: $clients__h3;
+        font-size: $font-size_xl;
+    }
+    &__address {
+        padding-bottom: 20px;
+        @extend %border-grey;
+        margin-bottom: 40px;
+        p {
+            width: 50%;
+        }
+    }
+    &__tel {
+        a {
+            color: $clients__h3;
+        }
+        padding-bottom: 20px;
+    }
+    &__contact-us-top {
+        padding: 0 0 40px 0;
+        @extend %border-grey;
+        margin-bottom: 20px;
+    }
+    &__facebook {
+        font-size: $font-size_md;
+        p {
+            width: 40%;
+        }
+    }
+}

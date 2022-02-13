@@ -24,7 +24,7 @@
     background-color: $blue;
     width: $width;
     height: $height;
-    border-radius: 12px;
+    @extend %border-radius-main;
     transition: .3s;
     font-size: $font-size_sm;
     &:active,

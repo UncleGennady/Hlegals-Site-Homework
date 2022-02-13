@@ -1,6 +1,13 @@
 @media(max-width: $burger-media-width) {
     .header {
         .navbar {
+            &-nav {
+                background-color: $clients__h3;
+                padding: 10px 0;
+            }
+            .white-bg {
+                background-color: $header__link-bg;
+            }
             .burger {
                 display: inline-block;
             }

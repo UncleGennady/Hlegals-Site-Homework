@@ -28,7 +28,7 @@
     }
     &__page-text {
         font-size: $font-size_xl;
-        padding-bottom: 40px;
+        @extend %padding-bottom-main;
     }
     &__icon {
         padding-bottom: 20px;

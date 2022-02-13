@@ -1,0 +1,45 @@
+@include desktop {
+    .contact {
+        &__address {
+            p {
+                width: 54%;
+            }
+        }
+    }
+}
+
+@include laptop {
+    .contact {
+        .row {
+            max-width: 100%;
+        }
+        &__address {
+            p {
+                width: 65%;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .contact {
+        padding: 130px 0 40px 0;
+        .row {
+            flex-direction: column;
+            gap: 40px;
+        }
+        &__info {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile {
+    .contact {
+        &__address {
+            p {
+                width: 50%;
+            }
+        }
+    }
+}

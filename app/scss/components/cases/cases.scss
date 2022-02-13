@@ -3,12 +3,13 @@
     padding-bottom: 30px;
     &__items {
         gap: 2px;
+        @extend %border-radius-main;
+        overflow: hidden;
     }
     &__wrapper {
         background-color: $team-slider-bg;
     }
     &__item-first {
-        padding: 0 20px;
         width: 423px;
         h3 {
             padding: 48px 20px 20px 20px;
@@ -50,7 +51,8 @@
     h4 {
         padding: 20px 0 20px 20px;
         font-size: $font-size_sm;
-        margin-bottom: 2px;
+        margin-bottom: 4px;
+        box-shadow: 0px 4px 0 0 $white;
     }
     h3 {
         color: $cases-h3;

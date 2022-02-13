@@ -36,7 +36,7 @@
     }
     .carousel {
         display: none;
-        padding-bottom: 40px;
+        @extend %padding-bottom-main;
         color: $white;
         p {
             font-size: $font-size_lg;

@@ -19,7 +19,7 @@
         height: 110px;
         padding: 25px 0;
         background-color: $white;
-        border-radius: 12px;
+        @extend %border-radius-main;
         img {
             height: 100%;
         }

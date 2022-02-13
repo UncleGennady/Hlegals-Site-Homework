@@ -1,0 +1,43 @@
+@include laptop {
+    .publications-entry-content {
+        padding-top: 200px;
+        max-width: 80%;
+    }
+}
+
+@include tablet {
+    .publications-entry-content {
+        padding: 130px 0 40px 0;
+        max-width: 100%;
+        h1 {
+            font-size: $font-size-h2;
+        }
+        h2 {
+            font-size: $font-size_xxl;
+        }
+        h3 {
+            font-size: $font-size_lg;
+        }
+        p {
+            padding-bottom: 20px;
+        }
+        &__info-top {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            .publications-entry-content__image {
+                @extend %border-radius-main;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .publications-entry-content {
+        &__info-top {
+            .publications-entry-content__image {
+                border-radius: 12px 12px 0 0;
+            }
+        }
+    }
+}
