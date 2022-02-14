@@ -21,16 +21,16 @@
 }
 
 @mixin link ($width, $height, $font-size_sm) {
+    @extend %border-radius-main;
+    @extend %transition-main;
     background-color: $blue;
     width: $width;
     height: $height;
-    @extend %border-radius-main;
-    transition: .3s;
     font-size: $font-size_sm;
     &:active,
     &:hover {
         color: $white;
-        box-shadow: 0 0 10px 1px $blue;
+        box-shadow: $link-shadow-blue;
     }
 }
 

@@ -25,14 +25,14 @@
         }
     }
     .arrow {
+        @extend %transition-main;
         width: 32px;
         height: 32px;
         border-radius: 50%;
         background-color: $team-slider-bg;
-        transition: .3s;
         &:hover,
         &:active {
-            background-color: $bluehover;
+            background-color: $blue-hover;
         }
         img {
             @extend %margin;

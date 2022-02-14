@@ -39,6 +39,10 @@ ul {
     color: $blue;
 }
 
+.header-text-color-white {
+    color: $white;
+}
+
 .pt-custom {
     padding-top: 140px;
 }
@@ -104,6 +108,10 @@ ul {
     }
 }
 
+.scrolldown {
+    z-index: 5;
+}
+
 .color-gradient {
     @extend %color-gradient;
 }
@@ -130,18 +138,21 @@ ul {
 }
 
 .switcher {
+    @extend %border-radius-main;
     background: $experience_tabs_border;
     border: 1px solid $experience_tabs_border;
-    @extend %border-radius-main;
     width: 260px;
     margin: 0 auto;
     .option {
-        transition: all 0.3s ease;
         @extend %border-radius-main;
+        transition: all 0.3s ease;
         span {
             font-size: $font-size_lg;
             color: $clients__h3;
         }
+    }
+    label {
+        cursor: pointer;
     }
     input[type="radio"] {
         display: none;

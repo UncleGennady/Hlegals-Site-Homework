@@ -14,11 +14,3 @@
         }
     }
 }
-
-@include mobile {
-    .cases {
-        &__item {
-            padding: 0 12px;
-        }
-    }
-}

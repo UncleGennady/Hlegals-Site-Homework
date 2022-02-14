@@ -16,14 +16,19 @@
             padding-right: 20px;
             &:after {
                 content: "";
-                width: 6px;
-                height: 6px;
+                @extend %dot-size;
                 display: block;
                 background-color: $white;
                 border-radius: 50%;
                 position: absolute;
                 top: 10px;
                 right: 7px;
+            }
+        }
+        &>.after-color-custom:not(:last-child) {
+            &:after {
+                content: "";
+                background-color: $experience_tabs_border;
             }
         }
     }
@@ -43,9 +48,9 @@
     }
     .navbar {
         .burger {
+            @extend %transition-main;
             display: none;
             background-color: transparent;
-            transition: .3s;
             border: none;
             &:focus {
                 box-shadow: 0 0 1px 0 $white;
@@ -63,17 +68,17 @@
         justify-content: flex-end;
     }
     &__link {
+        @extend %transition-main;
         font-size: $font-size_lg;
-        transition: .3s;
         &:hover,
         &:active {
             color: $experience_tabs_border_active;
         }
     }
     .current-page {
+        @extend %transition-main;
         color: $experience_tabs_border_active;
         box-shadow: 0 2px 0 0 $experience_tabs_border_active;
-        transition: .3s;
     }
     &__page-name {
         font-size: $font-size-h1;

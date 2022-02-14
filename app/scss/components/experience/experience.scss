@@ -3,12 +3,12 @@
     position: relative;
     padding-bottom: 80px;
     .nav-link {
+        @extend %transition-main;
         padding: 10px 40px 10px 0;
         font-size: $font-size-tabs;
         line-height: 50px;
         letter-spacing: 0em;
         color: $experience_tabs;
-        transition: .3s;
         border-radius: 0;
         border-right: 4px solid $experience_tabs_border;
         &:hover {
@@ -35,8 +35,8 @@
         }
     }
     .carousel {
-        display: none;
         @extend %padding-bottom-main;
+        display: none;
         color: $white;
         p {
             font-size: $font-size_lg;

@@ -27,8 +27,7 @@
             position: relative;
             &:after {
                 content: "";
-                width: 6px;
-                height: 6px;
+                @extend %dot-size;
                 display: block;
                 background-color: $experience_tabs_border;
                 border-radius: 50%;

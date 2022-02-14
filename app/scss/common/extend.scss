@@ -65,3 +65,12 @@
         z-index: 1;
     }
 }
+
+%transition-main {
+    transition: .3s;
+}
+
+%dot-size {
+    width: 6px;
+    height: 6px;
+}

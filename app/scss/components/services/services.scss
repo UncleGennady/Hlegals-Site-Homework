@@ -55,8 +55,7 @@
             width: 45%;
             &::before {
                 content: "";
-                width: 6px;
-                height: 6px;
+                @extend %dot-size;
                 border-radius: 50%;
                 background-color: #f0145a;
                 position: absolute;
