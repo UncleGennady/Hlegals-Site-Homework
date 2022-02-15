@@ -2,8 +2,9 @@
     .header {
         .navbar {
             &-nav {
-                background-color: $clients__h3;
-                padding: 10px 0;
+                background-color: $white;
+                padding: 10px;
+                border-radius: 12px;
             }
             .white-bg {
                 background-color: $header__link-bg;
@@ -13,12 +14,12 @@
             }
         }
         &__link {
+            text-align: center;
             color: $blue;
             background-color: $header__link-bg;
             padding: 0 10px;
+            width: 100%;
             border-radius: 4px;
-        }
-        .black-bg {
             background-color: $clients__h3;
         }
     }
