@@ -7731,6 +7731,7 @@ ul {
 }
 .map iframe {
   height: 600px;
+  margin-bottom: -7px;
 }
 
 .footer {
