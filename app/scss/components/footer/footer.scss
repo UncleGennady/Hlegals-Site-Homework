@@ -13,8 +13,7 @@
     .dot {
         &:before {
             content: "";
-            width: 6px;
-            height: 6px;
+            @extend %dot-size;
             display: block;
             background-color: $experience_tabs;
             border-radius: 50%;

@@ -1,5 +1,3 @@
-// Your mixins should be placed here
-// https://sass-scss.ru/documentation/miksini/obyavlenie_miksina/
 @mixin flex-media ($flex-value) {
     display: flex;
     justify-content: $flex-value;
@@ -15,18 +13,26 @@
     justify-content: $flex-value;
 }
 
-@mixin card-shadow ($background-color-value) {
-    background-color: $background-color-value;
+@mixin card-shadow ($background-color-value, $height, $width, $bottom, $left) {
     @extend %border-bg-wrapper;
+    background-color: $background-color-value;
+    height: $height;
+    width: $width;
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    content: "";
+    transform: translateX(-50%);
+    z-index: 1;
 }
 
-@mixin link ($width, $height, $font-size_sm) {
+@mixin link ($width, $height, $font-size) {
     @extend %border-radius-main;
     @extend %transition-main;
     background-color: $blue;
     width: $width;
     height: $height;
-    font-size: $font-size_sm;
+    font-size: $font-size;
     &:active,
     &:hover {
         color: $white;

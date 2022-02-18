@@ -1,5 +1,3 @@
-// Common styles should be placed here
-// Atomic classes, some styles for base element etc.
 body {
     font-family: $font-main;
 }
@@ -43,6 +41,10 @@ ul {
     color: $white;
 }
 
+.home-link {
+    z-index: 1;
+}
+
 .pt-custom {
     padding-top: 140px;
 }
@@ -72,32 +74,16 @@ ul {
 }
 
 .bg-wrapper {
+    @extend %border-bg-wrapper;
     position: relative;
     padding: 60px 0 80px 0;
     margin-bottom: 60px;
-    @extend %border-bg-wrapper;
     background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     &:before {
-        content: "";
-        height: 10px;
-        @include card-shadow($card-shadow__top);
-        width: 97%;
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
+        @include card-shadow($card-shadow__top, 10px, 97%, -10px, 50%);
     }
     &:after {
-        content: "";
-        height: 10px;
-        @include card-shadow($card-shadow__bot);
-        width: 94%;
-        position: absolute;
-        bottom: -20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
+        @include card-shadow($card-shadow__bot, 10px, 94%, -20px, 50%);
     }
 }
 
@@ -164,8 +150,8 @@ ul {
 }
 
 .modal-content-custom {
-    width: 527px;
     @extend %margin;
+    width: 527px;
 }
 
 @include desktop {
@@ -187,8 +173,8 @@ ul {
 }
 
 .main-form {
-    background-color: $team-slider-bg;
     @extend %border-radius-main;
+    background-color: $team-slider-bg;
     width: 527px;
     padding: 20px;
     h2 {
@@ -214,11 +200,11 @@ ul {
     }
     button {
         @extend %margin;
-        color: $white;
         @extend %border-radius-main;
         @include link (250px,
         50px,
         $font-size_sm);
+        color: $white;
     }
 }
 

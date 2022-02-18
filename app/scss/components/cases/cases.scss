@@ -2,8 +2,8 @@
     border-radius: 11px;
     padding-bottom: 30px;
     &__items {
-        gap: 2px;
         @extend %border-radius-main;
+        gap: 2px;
         overflow: hidden;
     }
     &__wrapper {

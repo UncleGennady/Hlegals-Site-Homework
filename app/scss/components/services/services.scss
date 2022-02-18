@@ -17,10 +17,10 @@
     }
     &__page-item {
         @extend %t-a-center;
+        @extend %margin;
         width: 66%;
         padding-top: 170px;
         z-index: 2;
-        @extend %margin;
         h1 {
             font-size: $font-size-tabs;
             padding-bottom: 20px;

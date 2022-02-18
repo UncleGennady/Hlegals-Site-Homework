@@ -10,8 +10,8 @@
         font-size: $font-size_xl;
     }
     &__address {
-        padding-bottom: 20px;
         @extend %border-grey;
+        padding-bottom: 20px;
         margin-bottom: 40px;
         p {
             width: 50%;
@@ -24,8 +24,8 @@
         padding-bottom: 20px;
     }
     &__contact-us-top {
-        padding: 0 0 40px 0;
         @extend %border-grey;
+        padding: 0 0 40px 0;
         margin-bottom: 20px;
     }
     &__facebook {

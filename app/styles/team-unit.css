@@ -5905,7 +5905,7 @@ progress {
   transition: 0.3s;
 }
 
-.unit ul > li:not(:last-child):after, .header__top-wrapper > div:not(:last-child):after {
+.footer .dot:before, .unit ul > li:not(:last-child):after, .header__top-wrapper > div:not(:last-child):after {
   width: 6px;
   height: 6px;
 }
@@ -5977,6 +5977,10 @@ ul {
   color: white;
 }
 
+.home-link {
+  z-index: 1;
+}
+
 .pt-custom {
   padding-top: 140px;
 }
@@ -6013,26 +6017,26 @@ ul {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
 .bg-wrapper:before {
-  content: "";
-  height: 10px;
   background-color: #CACADB;
+  height: 10px;
   width: 97%;
   position: absolute;
   bottom: -10px;
   left: 50%;
+  content: "";
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 1;
 }
 .bg-wrapper:after {
-  content: "";
-  height: 10px;
   background-color: #E7E7F2;
+  height: 10px;
   width: 94%;
   position: absolute;
   bottom: -20px;
   left: 50%;
+  content: "";
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -6143,11 +6147,11 @@ ul {
   padding: 10px;
 }
 .main-form button {
-  color: white;
   background-color: #24A3FF;
   width: 250px;
   height: 50px;
   font-size: 14px;
+  color: white;
 }
 .main-form button:active, .main-form button:hover {
   color: white;
@@ -7750,8 +7754,6 @@ ul {
 }
 .footer .dot:before {
   content: "";
-  width: 6px;
-  height: 6px;
   display: block;
   background-color: #B3B3BA;
   border-radius: 50%;
