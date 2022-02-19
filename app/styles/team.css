@@ -6131,6 +6131,7 @@ ul {
   padding-bottom: 20px;
 }
 .main-form p {
+  color: #B3B3BA;
   padding-bottom: 10px;
 }
 .main-form textarea {
@@ -6142,6 +6143,57 @@ ul {
   border-radius: 8px;
   outline: none;
   padding: 10px;
+}
+.main-form input::-webkit-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form input::-moz-placeholder {
+  color: #B3B3BA;
+}
+.main-form input:-ms-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form input::-ms-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form input::placeholder {
+  color: #B3B3BA;
+}
+.main-form input::-webkit-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form input::-moz-placeholder {
+  color: #B3B3BA;
+}
+.main-form input:-ms-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-webkit-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-moz-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea:-ms-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-ms-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-webkit-input-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-moz-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-moz-placeholder {
+  color: #B3B3BA;
+}
+.main-form textarea::-ms-input-placeholder {
+  color: #B3B3BA;
 }
 .main-form button {
   background-color: #24A3FF;

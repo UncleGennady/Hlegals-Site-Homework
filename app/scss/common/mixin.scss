@@ -40,6 +40,10 @@
     }
 }
 
+@mixin placeholder {
+    color: $experience_tabs;
+}
+
 @mixin desktop() {
     @media(max-width: $breakpoint_xxl) {
         @content;

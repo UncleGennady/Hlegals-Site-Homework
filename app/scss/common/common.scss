@@ -186,6 +186,7 @@ ul {
         padding-bottom: 20px;
     }
     p {
+        color: $experience_tabs;
         padding-bottom: 10px;
     }
     textarea {
@@ -197,6 +198,36 @@ ul {
         border-radius: 8px;
         outline: none;
         padding: 10px;
+    }
+    input::placeholder {
+        @include placeholder;
+    }
+    input::-webkit-input-placeholder {
+        @include placeholder;
+    }
+    input::-moz-placeholder {
+        @include placeholder;
+    }
+    input:-moz-placeholder {
+        @include placeholder;
+    }
+    input:-ms-input-placeholder {
+        @include placeholder;
+    }
+    textarea::placeholder {
+        @include placeholder;
+    }
+    textarea::-webkit-input-placeholder {
+        @include placeholder;
+    }
+    textarea::-moz-placeholder {
+        @include placeholder;
+    }
+    textarea::-moz-placeholder {
+        @include placeholder;
+    }
+    textarea::-ms-input-placeholder {
+        @include placeholder;
     }
     button {
         @extend %margin;
