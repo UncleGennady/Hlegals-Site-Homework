@@ -6113,6 +6113,11 @@ ul {
   background-color: white;
 }
 
+body .modal-dialog {
+  max-width: 100%;
+  pointer-events: initial;
+}
+
 .modal-content-custom {
   width: 527px;
 }
@@ -7710,6 +7715,9 @@ ul {
   }
   .header .navbar .burger {
     margin-bottom: 5px;
+  }
+  .header .navbar-collapse {
+    padding-top: 40px;
   }
   .header .navbar-nav {
     gap: 10px;

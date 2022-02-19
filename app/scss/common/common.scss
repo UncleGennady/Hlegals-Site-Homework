@@ -149,6 +149,13 @@ ul {
     }
 }
 
+body {
+    .modal-dialog {
+        max-width: 100%;
+        pointer-events: initial;
+    }
+}
+
 .modal-content-custom {
     @extend %margin;
     width: 527px;
