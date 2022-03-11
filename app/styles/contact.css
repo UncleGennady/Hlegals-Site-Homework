@@ -5872,7 +5872,7 @@ progress {
     display: none !important;
   }
 }
-.contact .row, .main-form button, .modal-content-custom {
+.contact .row, .main-form .send-form, .modal-content-custom {
   margin: 0 auto;
 }
 
@@ -5886,7 +5886,7 @@ progress {
   border-radius: 0 0 12px 12px;
 }
 
-.main-form button, .main-form, .switcher .option, .switcher {
+.main-form .send-form, .main-form, .switcher .option, .switcher {
   border-radius: 12px;
 }
 
@@ -5895,7 +5895,7 @@ progress {
           box-shadow: 0 4px 0 0 #E6E6F0;
 }
 
-.header .current-page, .header__link, .header .navbar .burger, .main-form button {
+.header .current-page, .header__link, .header .navbar .burger, .main-form .send-form {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -6199,17 +6199,31 @@ body .modal-dialog {
 .main-form textarea::-ms-input-placeholder {
   color: #B3B3BA;
 }
-.main-form button {
+.main-form .send-form {
   background-color: #24A3FF;
   width: 250px;
   height: 50px;
   font-size: 14px;
   color: white;
 }
-.main-form button:active, .main-form button:hover {
+.main-form .send-form:active, .main-form .send-form:hover {
   color: white;
   -webkit-box-shadow: 0 0 10px 1px #0d6efd;
           box-shadow: 0 0 10px 1px #0d6efd;
+}
+.main-form .btn-close {
+  width: 40px;
+  height: 40px;
+  background-color: initial;
+  margin-top: 2px;
+}
+.main-form .btn-close:hover {
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 @media (max-width: 1320px) {
@@ -7610,6 +7624,8 @@ body .modal-dialog {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  width: 100%;
+  margin: 0;
 }
 .header__link {
   font-size: 18px;
@@ -7631,12 +7647,11 @@ body .modal-dialog {
 
 @media (max-width: 991px) {
   .header .navbar-nav {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.582);
     padding: 10px;
     border-radius: 12px;
-  }
-  .header .navbar .white-bg {
-    background-color: rgba(255, 255, 255, 0.774);
+    width: 50%;
+    margin: 0 auto;
   }
   .header .navbar .burger {
     display: inline-block;
@@ -7644,11 +7659,10 @@ body .modal-dialog {
   .header__link {
     text-align: center;
     color: #24A3FF;
-    background-color: rgba(255, 255, 255, 0.774);
+    background-color: #F5F5FA;
     padding: 0 10px;
     width: 100%;
     border-radius: 4px;
-    background-color: #323264;
   }
 }
 @media (max-width: 1024px) {
@@ -7667,6 +7681,9 @@ body .modal-dialog {
   }
   .header__slash {
     padding-bottom: 0;
+  }
+  .header .navbar-nav {
+    width: 100%;
   }
   .header .burger {
     margin-top: 40px;

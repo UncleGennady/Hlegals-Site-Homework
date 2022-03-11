@@ -55,7 +55,7 @@
                 <span class="navbar-toggler-icon navbar-toggler-icon-black"></span>
             </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent32">
-                    <ul class="navbar-nav white-bg m-0 pe-2 w-100 d-flex">
+                    <ul class="navbar-nav pe-2 d-flex">
 
                         <li class="nav-item">
                             <a class="header__link header-text-color-blue" href="./about-us.html">про нас</a>
@@ -71,6 +71,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="header__link header-text-color-blue" href="./contact.html">контакти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="header__link header-text-color-blue" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">допомога</a>
                         </li>
                     </ul>
                 </div>
@@ -195,6 +198,38 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content-custom">
+                <form class=" main-form d-flex justify-content-center flex-column" action="# ">
+                    <div class="d-flex gap-md">
+                        <h2 class="color-gradient m-0 ">Ми хотіли б Вам допомогти</h2>
+                        <button type="button" class="btn-close p-0 border-0" data-bs-dismiss="modal" aria-label="Close"><img src="./../img/icons/Close.svg" alt="#"></button>
+                    </div>
+                    <label class="d-block ">
+                            <input class="w-100 border-0 " type="text " name="name " placeholder="Iм’я ">
+                    </label>
+                    <label class="d-block ">
+                            <textarea class="w-100 border-0 " name="massage " rows="6 " placeholder="Повідомлення "></textarea>
+                        
+                    </label>
+                    <p class="m-0 fw-bold">
+                        Як вам відповісти?
+                    </p>
+                    <label class="d-block ">
+                            <input class="w-100 border-0 " type="tel " name="tel " placeholder="Номер телефона ">
+                    </label>
+                    <label class="d-block ">
+                            <input class="w-100 border-0 " type="email " name="email " placeholder="Чи email ">
+                    </label>
+
+                    <button class="border-0 fw-bold send-form" type="button border-0 ">
+                            Надіслати запит
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <!-- Include bootstrap JS file -->
     <script src=" ../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js "></script>

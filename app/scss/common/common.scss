@@ -236,13 +236,23 @@ body {
     textarea::-ms-input-placeholder {
         @include placeholder;
     }
-    button {
+    .send-form {
         @extend %margin;
         @extend %border-radius-main;
         @include link (250px,
         50px,
         $font-size_sm);
         color: $white;
+    }
+    .btn-close {
+        width: 40px;
+        height: 40px;
+        background-color: initial;
+        margin-top: 2px;
+        &:hover {
+            transform: scale(1.5);
+            transition: .5s;
+        }
     }
 }
 
