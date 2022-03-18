@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    max-width: $breakpoint_xxl;
+    max-width: map-get($breakpoint, "xxl");
 }
 
 h1 {
@@ -284,7 +284,7 @@ body {
     .container-lg,
     .container-md,
     .container-sm {
-        max-width: $breakpoint_xl;
+        max-width: map-get($breakpoint, "xl");
     }
 }
 
@@ -294,7 +294,7 @@ body {
     .container-lg,
     .container-md,
     .container-sm {
-        max-width: $breakpoint_lg;
+        max-width: map-get($breakpoint, "lg");
         .header__icon {
             justify-content: start !important;
         }
@@ -306,7 +306,7 @@ body {
     .container-lg,
     .container-md,
     .container-sm {
-        max-width: $breakpoint_md;
+        max-width: map-get($breakpoint, "md");
     }
 }
 
@@ -314,13 +314,13 @@ body {
     .container,
     .container-md,
     .container-sm {
-        max-width: $breakpoint_sm;
+        max-width: map-get($breakpoint, "sm");
     }
 }
 
 @include mobile_s {
     .container,
     .container-sm {
-        max-width: $breakpoint_xsm;
+        max-width: map-get($breakpoint, "xsm");
     }
 }

@@ -17,13 +17,7 @@ $font-size-about-us-h1: 96px;
 $font-main:'TT Norms',
 sans-serif;
 //-------------------------------------
-$breakpoint_xxl:1320px;
-$breakpoint_xl:1024px;
-$breakpoint_lg:860px;
-$breakpoint_md:768px;
-$breakpoint_sm:425px;
-$breakpoint_xsm:375px;
-$burger-media-width:991px;
+$breakpoint: ( "xxl":1320px, "xl":1024px, "lg":860px, "md":768px, "sm":425px, "xsm":375px, "burger-media-width":991px, );
 //--------------------------------------
 $white:white;
 $black: black;
