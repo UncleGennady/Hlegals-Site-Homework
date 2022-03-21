@@ -1,5 +1,5 @@
 .header {
-    padding: 50px 0 0 0;
+    padding: 70px 0 0 0;
     background: transparent;
     z-index: 3;
     top: 0;
@@ -43,6 +43,7 @@
             input:checked+span {
                 background-color: $accent;
                 border-radius: 8px;
+                color: $white;
             }
         }
     }

@@ -7557,7 +7557,7 @@ body .modal-dialog {
   }
 }
 .header {
-  padding: 50px 0 0 0;
+  padding: 70px 0 0 0;
   background: transparent;
   z-index: 3;
   top: 0;
@@ -7603,6 +7603,7 @@ body .modal-dialog {
 .header__langs label input:checked + span {
   background-color: #F0145A;
   border-radius: 8px;
+  color: white;
 }
 .header .navbar .burger {
   display: none;
@@ -7691,7 +7692,7 @@ body .modal-dialog {
 }
 @media (max-width: 768px) {
   .header__top {
-    padding-top: 0;
+    padding-top: 20px;
   }
   .header__top-wrapper {
     margin: 0;

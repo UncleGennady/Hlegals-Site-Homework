@@ -7570,7 +7570,7 @@ body .modal-dialog {
   }
 }
 .header {
-  padding: 50px 0 0 0;
+  padding: 70px 0 0 0;
   background: transparent;
   z-index: 3;
   top: 0;
@@ -7616,6 +7616,7 @@ body .modal-dialog {
 .header__langs label input:checked + span {
   background-color: #F0145A;
   border-radius: 8px;
+  color: white;
 }
 .header .navbar .burger {
   display: none;
@@ -7704,7 +7705,7 @@ body .modal-dialog {
 }
 @media (max-width: 768px) {
   .header__top {
-    padding-top: 0;
+    padding-top: 20px;
   }
   .header__top-wrapper {
     margin: 0;
@@ -7774,6 +7775,17 @@ body .modal-dialog {
   padding-bottom: 40px;
   font-size: 18px;
 }
+.publications-entry-content__date {
+  color: #B3B3BA;
+}
+.publications-entry-content__list li::marker {
+  color: #F0145A;
+  font-weight: bold;
+}
+.publications-entry-content__notation {
+  color: #B3B3BA;
+  font-size: 16px;
+}
 .publications-entry-content__info-top {
   margin-bottom: 40px;
 }
@@ -7823,6 +7835,11 @@ body .modal-dialog {
 @media (max-width: 768px) {
   .publications-entry-content__info-top .publications-entry-content__image {
     border-radius: 12px 12px 0 0;
+  }
+  .publications-entry-content__socials {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .form-label {

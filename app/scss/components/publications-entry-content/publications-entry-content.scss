@@ -20,6 +20,21 @@
         padding-bottom: 40px;
         font-size: $font-size_lg;
     }
+    &__date {
+        color: $experience_tabs;
+    }
+    &__list {
+        li {
+            &::marker {
+                color: $experience_tabs_border_active;
+                font-weight: bold;
+            }
+        }
+    }
+    &__notation {
+        color: $experience_tabs;
+        font-size: $font-size_md;
+    }
     &__info-top {
         @extend %padding-bottom-main;
         @extend %border-grey;
